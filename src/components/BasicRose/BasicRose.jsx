@@ -5,7 +5,7 @@ function BasicRose() {
   const [dataCharts, setDataCharts] = useState([]);
   useEffect(() => {
     const fetchApi = () => {
-      fetch("http://localhost:3000/pie")
+      fetch("https://dinhviethuy-database-chart.vercel.app/pie")
         .then(res => res.json())
         .then(data => setDataCharts(data));
     }

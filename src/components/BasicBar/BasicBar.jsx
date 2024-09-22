@@ -5,7 +5,7 @@ function BasicBar() {
   const [dataCharts, setDataCharts] = useState([]);
   useEffect(() => {
     const fetchApi = () => {
-      fetch("http://localhost:3000/basic-line")
+      fetch("https://dinhviethuy-database-chart.vercel.app/basic-line")
         .then(res => res.json())
         .then(data => setDataCharts(data));
     }

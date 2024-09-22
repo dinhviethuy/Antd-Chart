@@ -5,7 +5,7 @@ function GroupRose() {
   const [dataCharts, setDataCharts] = useState([]);
   useEffect(() => {
     const fetchApi = () => {
-      fetch("http://localhost:3000/rose")
+      fetch("https://dinhviethuy-database-chart.vercel.app/rose")
         .then(res => res.json())
         .then(data => setDataCharts(data));
     }
